@@ -1,39 +1,69 @@
 # 🛠️ Fix My Damn Windows
 
-**`fixmydamnwindows.bat`** is a simple but effective batch script that automates several essential repair tools in Windows to help you resolve common system issues. If you often find yourself manually running SFC, DISM, and CHKDSK commands every time your Windows PC acts up, this script is for you.
+**A toolkit of batch scripts to repair common Windows issues with a single click.**
 
-## 🧰 What It Does
+This repo includes:
 
-This script will:
+- [`fixmydamnwindows.bat`](./fixmydamnwindows.bat) — for general system repair  
+- [`fixnetwork.bat`](./fixnetwork.bat) — for network-related troubleshooting
 
-1. **Schedule a CHKDSK** on the C: drive for the next reboot.
-2. **Run System File Checker (SFC)** to scan and repair corrupted system files.
-3. **Run multiple DISM commands** to assess and repair the Windows image.
-4. **Clean up system components** to improve stability and performance.
+If you’re tired of manually typing commands into the terminal every time Windows starts misbehaving, these scripts are for you.
 
-All in one go — just sit back and let the script do the work.
+---
+
+## 📂 Scripts Overview
+
+### 🔧 `fixmydamnwindows.bat`
+
+Automates essential system repair tools to fix common Windows issues.
+
+#### 🧰 What It Does
+
+- ✅ Schedules a `CHKDSK` on the `C:` drive for the next reboot  
+- 🛠️ Runs **System File Checker (SFC)** to scan and repair system files  
+- 🔍 Executes multiple **DISM** commands to check and restore Windows health  
+- 🧹 Cleans up Windows components to improve performance and reduce issues
+
+---
+
+### 🌐 `fixnetwork.bat`
+
+Fixes common internet and network problems with one command.
+
+#### 🧰 What It Does
+
+- 🔁 Resets **Winsock** (for socket/connection issues)  
+- 📡 Resets **TCP/IP stack** to default settings  
+- 📴 Releases and 🔄 renews your IP address  
+- 🧠 Flushes **DNS cache** to resolve name resolution problems
+
+---
 
 ## ⚠️ Requirements
 
-* Must be **run as Administrator**.
-* Designed for Windows 10/11 systems.
-* Script targets the **C: drive by default** for CHKDSK.
+- 🛑 Must be **run as Administrator**
+- 🖥️ Designed for **Windows 10/11**
+- 🧩 For `CHKDSK`: assumes your system drive is `C:` (you can change it)
+
+---
 
 ## 🚀 How to Use
 
-1. **Right-click** on `fixmydamnwindows.bat` and choose **Run as Administrator**.
-2. Follow the prompts in the terminal.
-3. **Restart your computer** when prompted to allow CHKDSK to run.
+1. Download the `.bat` file(s) you need
+2. **Right-click** the file and choose **Run as Administrator**
+3. Follow the on-screen instructions
+4. Restart your system if asked (especially for `fixmydamnwindows.bat`)
 
-That's it!
+---
 
 ## 📝 Notes
 
-* **CHKDSK** is set to run on `C:` by default.
-  If your Windows installation is on a different drive (e.g., `D:`), open the `.bat` file in Notepad and change this line:
+### Changing the Drive for CHKDSK
 
-  ```bat
-  echo y | chkdsk C: /f
+If your system drive is not `C:`, open the `fixmydamnwindows.bat` file in Notepad and modify this line:
+
+```bat
+echo y | chkdsk C: /f
   ```
 
   to
@@ -42,8 +72,9 @@ That's it!
   echo y | chkdsk D: /f
   ```
 
-* **Do not interrupt** your system during the reboot and disk scan. It may take some time — patience is key!
+**Do not interrupt** your system during the reboot and disk scan. It may take some time — patience is key!
 
 ## ❗ Disclaimer
 
-This script performs operations that modify system files and configurations. Use at your own risk. Make sure to **back up important data** before running.
+TThese scripts make changes to your system configuration and files.
+Use at your own risk. Always **back up important data** before proceeding.
