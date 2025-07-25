@@ -5,7 +5,7 @@
 This repo includes:
 
 - [`fixmydamnwindows.bat`](./fixmydamnwindows.bat) — for general system repair  
-- [`fixnetwork.bat`](./fixnetwork.bat) — for network-related troubleshooting
+- [`WindowsNetworkRepair.bat`](./WindowsNetworkRepair.bat) — for network-related troubleshooting
 
 If you’re tired of manually typing commands into the terminal every time Windows starts misbehaving, these scripts are for you.
 
@@ -26,7 +26,7 @@ Automates essential system repair tools to fix common Windows issues.
 
 ---
 
-### 🌐 `fixnetwork.bat`
+### 🌐 `WindowsNetworkRepair.bat`
 
 Fixes common internet and network problems with one command.
 
