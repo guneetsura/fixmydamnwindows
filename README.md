@@ -24,6 +24,10 @@ Automates essential system repair tools to fix common Windows issues.
 - 🔍 Executes multiple **DISM** commands to check and restore Windows health  
 - 🧹 Cleans up Windows components to improve performance and reduce issues
 
+#### 🛡️ VirusTotal Scan
+
+[View VirusTotal Report](https://www.virustotal.com/gui/file/9d17a356a530b8d486b4f653aed863c5301662d428fc2a49b3ca13d4105d380e/detection)
+
 ---
 
 ### 🌐 `WindowsNetworkRepair.bat`
@@ -36,6 +40,10 @@ Fixes common internet and network problems with one command.
 - 📡 Resets **TCP/IP stack** to default settings  
 - 📴 Releases and 🔄 renews your IP address  
 - 🧠 Flushes **DNS cache** to resolve name resolution problems
+
+#### 🛡️ VirusTotal Scan
+
+[View VirusTotal Report](https://www.virustotal.com/gui/file/fd04988e206c5163bfbfa3d44dfb8b70b446c2d84b802966509bc55bfb0e411e?nocache=1)
 
 ---
 
@@ -76,5 +84,5 @@ echo y | chkdsk C: /f
 
 ## ❗ Disclaimer
 
-TThese scripts make changes to your system configuration and files.
+These scripts make changes to your system configuration and files.
 Use at your own risk. Always **back up important data** before proceeding.
