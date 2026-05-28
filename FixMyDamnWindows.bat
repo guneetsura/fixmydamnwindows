@@ -17,10 +17,6 @@ pause >nul
 echo Scheduling disk check on next reboot...
 echo y | chkdsk C: /f
 
-:: Run System File Checker
-echo Running System File Checker...
-sfc /scannow
-
 :: Run DISM health checks
 echo Running DISM /CheckHealth...
 dism.exe /online /cleanup-image /checkhealth
@@ -33,6 +29,10 @@ dism.exe /online /cleanup-image /restorehealth
 
 echo Running DISM /StartComponentCleanup...
 dism.exe /online /cleanup-image /startcomponentcleanup
+
+:: Run System File Checker
+echo Running System File Checker...
+sfc /scannow
 
 :: Done!
 echo.
