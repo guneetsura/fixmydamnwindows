@@ -4,7 +4,7 @@
 
 This repo includes:
 
-- [`fixmydamnwindows.bat`](./fixmydamnwindows.bat) — for general system repair  
+- [`FixMyDamnWindows.bat`](./FixMyDamnWindows.bat) — for general system repair  
 - [`WindowsNetworkRepair.bat`](./WindowsNetworkRepair.bat) — for network-related troubleshooting
 
 If you’re tired of manually typing commands into the terminal every time Windows starts misbehaving, these scripts are for you.
@@ -60,7 +60,7 @@ Fixes common internet and network problems with one command.
 1. Download the `.bat` file(s) you need
 2. **Right-click** the file and choose **Run as Administrator**
 3. Follow the on-screen instructions
-4. Restart your system if asked (especially for `fixmydamnwindows.bat`)
+4. Restart your system if asked (especially for `FixMyDamnWindows.bat`)
 
 ---
 
@@ -68,7 +68,7 @@ Fixes common internet and network problems with one command.
 
 ### Changing the Drive for CHKDSK
 
-If your system drive is not `C:`, open the `fixmydamnwindows.bat` file in Notepad and modify this line:
+If your system drive is not `C:`, open the `FixMyDamnWindows.bat` file in Notepad and modify this line:
 
 ```bat
 echo y | chkdsk C: /f
