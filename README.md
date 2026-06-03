@@ -13,7 +13,7 @@ If you’re tired of manually typing commands into the terminal every time Windo
 
 ## 📂 Scripts Overview
 
-### 🔧 `fixmydamnwindows.bat`
+### 🔧 `FixMyDamnWindows.bat`
 
 Automates essential system repair tools to fix common Windows issues.
 
